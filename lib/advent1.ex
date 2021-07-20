@@ -4,12 +4,8 @@ defmodule Advent1 do
   """
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Advent1.hello()
-      :world
+  Adventure of Code, this code is the resolution of challenge
+  https://adventofcode.com/2020/day/1
 
   """
  def readAdventFile(filepath) do
@@ -20,8 +16,7 @@ defmodule Advent1 do
 
    if is_list([head | tail]) do
 
-    IO.puts ("The result of the advent is:")
-    IO.puts (calculateAdvent([head | tail]))
+     calculateAdvent([head | tail])
 
    end
 
@@ -54,9 +49,10 @@ end
 
 end
 
-fileInput = "..\\data\\AdventofCodeChallengeInput.txt"
+fileInput = "C:\\Users\\mauri\\OneDrive\\Utfpr\\Funct_Prog\\advent1\\data\\AdventofCodeChallengeInput.txt"
 
 IO.puts ("Advent of Code Day 1 2020")
 IO.puts ("The file bellow is being used to calculate the challenge:")
 IO.puts (fileInput)
+IO.puts ("The result of the advent is:")
 IO.puts (Advent1.readAdventFile(fileInput))
